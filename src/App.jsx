@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react'
 
 function App() {
@@ -49,3 +50,55 @@ export default App
       <button onClick={decreaseCount}>Decrease count</button>
       <button onClick={resetCount}>Reset</button>
       */
+=======
+import { useState } from 'react'
+import PostComponent from './Post'
+
+import React from 'react'
+
+function App() {
+  const [count, setCount] = useState(1)
+  function increaseCount() {
+    setCount(count + 1)
+  }
+  setInterval(increaseCount, 1000)
+  return (
+    <div>
+      <div style={{ display: 'flex' }}>
+        <div
+          style={{
+            background: 'red',
+            borderRadius: 20,
+            width: 20,
+            height: 25,
+            paddingLeft: 10,
+            paddingTop: 5,
+          }}
+        >
+          {count}
+        </div>
+        <div
+          style={{
+            background: 'red',
+            borderRadius: '20',
+            width: 20,
+            height: 20,
+          }}
+        >
+          1
+        </div>
+      </div>
+      <img
+        style={{ cursor: 'pointer' }}
+        src={
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6OxiWujd38RQ52kPQibOUa4Wka2kzkc8ZwQ&s'
+        }
+        width={40}
+      />
+      <button onClick={increaseCount}>Increase the count</button>
+    </div>
+  )
+}
+
+export default App
+>>>>>>> 6b2be95 (add second project in subfolder)
