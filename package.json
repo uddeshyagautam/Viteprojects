@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "vite-1",
+=======
+  "name": "vite-2",
+>>>>>>> 6b2be95 (add second project in subfolder)
   "private": true,
   "version": "0.0.0",
   "type": "module",
