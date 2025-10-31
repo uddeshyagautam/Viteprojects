@@ -1,12 +1,73 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal React app bootstrapped with Vite. It includes hot module replacement (HMR) and ESLint configured for a smooth developer experience.
 
-Currently, two official plugins are available:
+## Tech Stack
+- **Build tool**: Vite
+- **UI**: React 19
+- **Linting**: ESLint (with React Hooks and React Refresh plugins)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Structure
+```
+/ (project root)
+├─ public/
+│  └─ vite.svg
+├─ src/
+│  ├─ App.jsx
+│  ├─ Post.jsx
+│  ├─ adpost.jsx
+│  ├─ adn1.jsx
+│  ├─ main.jsx
+│  ├─ App.css
+│  ├─ index.css
+│  └─ assets/
+│     └─ react.svg
+├─ index.html
+├─ package.json
+├─ vite.config.js
+└─ eslint.config.js
+```
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js 18+ recommended
+- npm (comes with Node) or pnpm/yarn
+
+### Installation
+```bash
+npm install
+```
+
+### Development
+```bash
+npm run dev
+```
+This starts the Vite dev server with HMR. Open the URL printed in the terminal (usually `http://localhost:5173`).
+
+### Lint
+```bash
+npm run lint
+```
+
+### Build
+```bash
+npm run build
+```
+Outputs a production build to the `dist/` directory.
+
+### Preview Production Build
+```bash
+npm run preview
+```
+Serves the contents of `dist/` locally to verify the production build.
+
+## Scripts (package.json)
+- `dev`: Start the Vite development server
+- `build`: Build for production
+- `preview`: Preview the production build locally
+- `lint`: Run ESLint over the project
+
+## Notes
+- This project uses React Fast Refresh via Vite's React plugin for instant feedback during development.
+- ESLint is configured to catch common issues early. Consider integrating with your editor for inline diagnostics.
